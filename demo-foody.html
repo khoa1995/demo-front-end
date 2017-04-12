@@ -18,13 +18,56 @@
     <script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
     <style>
-  .list-group-item:hover{
-        color: red;
-        cursor: pointer;
-  }
-#search{
-    width: 50%;
-}
+  
+        .list-group-item:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        #search {
+            width: 50%;
+        }
+
+        .row {
+            width: 100%;
+            padding-left: 5%;
+        }
+
+        #first-child {
+            background-color: gray;
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        #Login {
+            background-color: #C3B8B8;
+            width: 200px;
+            top: 36px;
+        }
+
+        .button {
+            float: right;
+            background-color: orange;
+            border: 2px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            color: white;
+        }
+
+        .sidebar-left {
+            float: left;
+            width: 20%;
+            height: 500px;
+            background-attachment: fixed;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -33,169 +76,208 @@
         <!-- header -->
         <header style="background-color:gray; height: 20%">
             <ul class="nav nav-tabs" style="padding-left: 5%">
-            <li class="active"><a href="#home" style="color:#000 " data-toggle="tab">Khám phá</a></li>
-            <li ><a href="#menu1" style="color: #fff " data-toggle="tab">Đặt bàn</a></li>
+                <li class="active"><a href="#home" style="color:#000 " data-toggle="tab">Khám phá</a></li>
+                <li><a href="#menu1" style="color: #fff " data-toggle="tab">Đặt bàn</a></li>
             </ul>
 
-        <div class="tab-content">
-          <nav class="navbar navbar-default tab-pane fade in active" id="home">
-              <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <div class="tab-content">
+                <nav class="navbar navbar-default tab-pane fade in active" id="home">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand"> <img src="img/foody-vn.png" height="30" width="85"></a>
-                </div>
+                            <a class="navbar-brand"> <img src="img/foody-vn.png" height="30" width="85"></a>
+                        </div>
 
-                
+
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
-                            <li class="dropdown" style="height: 10%"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TP.HCM
+                                <li class="dropdown" style="height: 10%"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TP.HCM
                             <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Hà Nội</a></li>
-                                    <li><a href="#">Đà Nẵng</a></li>
-                                    <li><a href="#">Huế</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Ăn uống
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Hà Nội</a></li>
+                                        <li><a href="#">Đà Nẵng</a></li>
+                                        <li><a href="#">Huế</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ăn uống
                                 <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Du lịch</a></li>
-                                    <li><a href="#">Vui chơi</a></li>
-                                    <li><a href="#">Làm đẹp</a></li>
-                                </ul>
-                            </li>
-                            
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Du lịch</a></li>
+                                        <li><a href="#">Vui chơi</a></li>
+                                        <li><a href="#">Làm đẹp</a></li>
+                                    </ul>
+                                </li>
+
                             </ul>
-                            
+                            <ul class="nav navbar-nav navbar-right" style="padding-top: 14px">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-log-in"></span> Login
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu" id="Login">
+                                    <li>
+                                        <form method="post" style="padding-left: 5%">
+                                            <p><input type="text" style="width: 90%" placeholder="Email"></p>
+                                            <p><input type="password" style="width: 90%" placeholder="password"></p>
+                                            <input type="checkbox"> nhớ tài khoản
+                                            <p><a href="#">Quên mật khẩu</a>
+                                                <input value="Đăng nhập" type="submit" class="button">
+                                                <p><a href="#">Đăng ký</a></p>
+                                        </form>
+                                    </li>
 
-                        <form class="navbar-form" role="search">
-                            <div class="input-group add-on" id="search">
-                            <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                            </div>
-                            </div>
-                        </form>
-
-                        <span class="dropdown" style="float: right; bottom: 42px; right:10%">
-                                <span class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
-                                <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><form method="post">
-                                        <table  cellspacing="0" cellpadding="0">
-                                            <tr>
-                                            <td>Email</td>
-                                            <td><input type="text" name="Email" placeholder="nhập email" required="@"></td>
-                                            </tr>
-                                            <br>
-                                            <tr>
-                                            <td>Password</td>
-                                            <hr>
-                                            <td><input type="Password" name="Password" placeholder="nhập password"></td>	
-                                        </table>
-	</form></li>
                                 </ul>
-                            </span>
-                        </span>
-                            
-                            </div>
+
+                            </ul>
+
+
+                            <form class="navbar-form" role="search">
+                                <div class="input-group add-on" id="search">
+                                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+
                         </div>
-                    </nav>            
-        <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-        </div>
-                 
+                    </div>
+                </nav>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
         </header>
         <!-- end header -->
         <div id="main" style="padding: 0 0 5% 5%">
-     <!-- page-home-->
-    <div style="padding:1px" alt="body" title="body">
-    <!--sidebar-left-->
-	<div style=" float:left; width:20%;height:500px; background-attachment: fixed">
-        <ul class="list-group">
-             <li class="list-group-item" style="background-color: gray; pointer-events: none; opacity: 0.7">DANH MỤC</li>
-            <li class="list-group-item">Ở đâu</li>
-            <li class="list-group-item">Giao hàng</li>
-            <li class="list-group-item">Ăn gì</li>
-            <li class="list-group-item">Đặt bàn</li>
-            <li class="list-group-item">Sưu tầm</li>
-            <li class="list-group-item">TV</li>
-            <li class="list-group-item">Bình luận</li>
-            <li class="list-group-item">Blogs</li>
-            <li class="list-group-item">Khuyến mãi</li>
-            <li class="list-group-item">Bank-Card</li>
-            <li class="list-group-item">E-Card</li>
-        </ul>
+            <!-- page-home-->
+                <!--sidebar-left-->
+                <div class="sidebar-left">
+                    <ul class="list-group">
+                        <li class="list-group-item" id="first-child">DANH MỤC</li>
+                        <li class="list-group-item">Ở đâu</li>
+                        <li class="list-group-item">Giao hàng</li>
+                        <li class="list-group-item">Ăn gì</li>
+                        <li class="list-group-item">Đặt bàn</li>
+                        <li class="list-group-item">Sưu tầm</li>
+                        <li class="list-group-item">TV</li>
+                        <li class="list-group-item">Bình luận</li>
+                        <li class="list-group-item">Blogs</li>
+                        <li class="list-group-item">Khuyến mãi</li>
+                        <li class="list-group-item">Bank-Card</li>
+                        <li class="list-group-item">E-Card</li>
+                    </ul>
+                </div>
+                <!--main-->
 
+                <div style=" float:left;width:80%">
+                    <ul class="nav nav-tabs" style="padding-left: 5%">
+                        <li class="active"><a href="#new" data-toggle="tab">Mới nhất</a></li>
+                         <li><a href="#week" data-toggle="tab">Top tuần</a></li>
+                        <li><a href="#near" data-toggle="tab">Gần tôi</a></li>
+                        <div class="dropdown" style="float: right; margin-top:3px; margin-right: 20px">
+                        <button   style="margin-top: 3px">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" >
+                                     --Quận/huyện--
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="disabled"><a href="#">--Quận/huyện--</a></li>
+                                    <li class="active"> <a href="#">Quận 1</a> </li>
+                                    <li> <a href="#">Quận 2</a> </li>
+                                    <li> <a href="#">Quận 3</a> </li>
 
-    </div>
-    <!--main-->
-        <div style=" float:left;width:80%" >
-                <div class="row" style="width: 100%; padding-left: 5%">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
-                        <div>chó con</div>
+                                </ul>
+                       
+                        </button>
+                        </div>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="new" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
+                                <div>chó con</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%">
+                                   
+                                </div>
+                                <div>chó con</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%">
+                                   
+                                </div>
+                                <div>chó con</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
+                                <div>chó con</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%">
+                                   
+                                </div>
+                                <div>chó con</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%">
+                                   
+                                </div>
+                                <div>chó con</div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
+                                <div>chó con</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%">
+                                   
+                                </div>
+                                <div>chó con</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                                <div><img class="img-rounded" src="img/img.jpg" style="width: 100%">
+                                   
+                                </div>
+                                <div>chó con</div>
+                            </div>
+                        </div>
+                        </div>
+                        <!--Top Tuần-->
+                        <div id="week" class="tab-pane fade"></div>
+                        <!--Gần tôi-->
+                        <div id="near" class="tab-pane fade"></div>
+                       
+
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></></div>
-                        <div>chó con</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></></div>
-                        <div>chó con</div>
-                    </div>     
-                </div>
-<hr>
-                  <div class="row" style="width: 100%; padding-left: 5%">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
-                        <div>chó con</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></></div>
-                        <div>chó con</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></></div>
-                        <div>chó con</div>
-                    </div>     
-                </div>
-               
-<hr>
-                  <div class="row" style="width: 100%; padding-left: 5%">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
-                        <div>chó con</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></></div>
-                        <div>chó con</div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-                        <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></></div>
-                        <div>chó con</div>
-                    </div>     
-                </div>
-        </div>
-        <div style="clear:both"></div>
-           
-        </div>
-        </div>
-            <!-- end page-home -->
-        </div>
-        <!-- footer -->
-        <footer>
-            <div class="container">
             </div>
-        </footer>
-        <!-- end footer -->
+        </div>
+        <!-- end page-home -->
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container" >
+        </div>
+    </footer>
+    <!-- end footer -->
     </div>
     <!-- end container -->
 </body>
+
 </html>
