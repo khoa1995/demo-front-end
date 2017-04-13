@@ -57,10 +57,9 @@
         }
 
         .sidebar-left {
-            float: left;
-            width: 20%;
+          
+           
             height: 500px;
-            background-attachment: fixed;
         }
         a:hover{
             text-decoration: none;
@@ -74,12 +73,19 @@
             border-top: 1px solid black;
         }
         #main{
+         
             height: 1000px;
         }
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    
     </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="container">
         <!-- header -->
         <header style="background-color:gray; height: 20%">
@@ -163,10 +169,34 @@
 
         </header>
         <!-- end header -->
+        <!--slider-->
+        <div class="container" id="slider">
+            <div class="carousel slide" data-ride="carousel" id="myCarousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/food1.jpg" width="80%" height="100px">
+                    </div>
+                    <div class="item">
+                        <img src="img/food2.jpg" width="80%" height="100px">
+                    </div>
+                    <div class="item">
+                        <img src="img/food3.jpg" width="80%" height="100px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end slider-->
+
         <div id="main" style="padding: 0 0 5% 5%">
             <!-- page-home-->
                 <!--sidebar-left-->
-                <div class="sidebar-left">
+                <div class="sidebar-left col-xs-3 col-lg-3 col-md-3 col-sm-3">
                     <ul class="list-group">
                         <li class="list-group-item" id="first-child">DANH MỤC</li>
                         <li class="list-group-item">Ở đâu</li>
@@ -184,13 +214,16 @@
                 </div>
                 <!--main-->
 
-                <div style=" float:left;width:80%">
+                <div style="" class="col-xs-9 col-lg-9 col-md-9 col-sm-9">
+                    
                     <ul class="nav nav-tabs" style="padding-left: 5%">
                         <li class="active"><a href="#new" data-toggle="tab">Mới nhất</a></li>
                          <li><a href="#week" data-toggle="tab">Top tuần</a></li>
-                        <li><a href="#near" data-toggle="tab">Gần tôi</a></li>
+                        <li ><a href="#near" data-toggle="tab">Gần tôi</a></li>
+                       
+                    
                         <div class="dropdown" style="float: right; margin-top:3px; margin-right: 20px">
-                        <button   style="margin-top: 3px">
+                        <button   style="margin-top: 3px" >
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown" >
                                      --Quận/huyện--
                                     <span class="caret"></span></a>
@@ -273,6 +306,7 @@
 
                     </div>
             </div>
+            <div style="clear: both"></div>
         </div>
         <!-- end page-home -->
          <!-- footer -->
