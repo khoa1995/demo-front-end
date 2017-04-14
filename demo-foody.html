@@ -147,8 +147,8 @@
         <header style="background-color:gray; height: 20%">
             
             <ul class="nav nav-tabs" style="padding-left: 5%">
-                <li class="active"><a href="#home" style="color:#000 " data-toggle="tab" class="tab">Khám phá</a></li>
-                <li><a href="#menu1" style="color: #fff " data-toggle="tab" id="order" class="tab">Đặt bàn</a></li>
+                <li class="active"><a href="#home"  data-toggle="tab" class="tab">Khám phá</a></li>
+                <li><a href="#menu1" data-toggle="tab" id="order" class="tab">Đặt bàn</a></li>
             </ul>
 
             <div class="tab-content" data-spy="affix" data-offset="197">
@@ -156,10 +156,10 @@
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                             <a class="navbar-brand"> <img src="img/foody-vn.png" height="30" width="85"></a>
                         </div>
 
@@ -262,7 +262,7 @@
         <div id="main" style="margin: 2% 0 5% 5%">
             <!-- page-home-->
                 <!--sidebar-left-->
-                <div class="sidebar-left col-xs-3 col-lg-3 col-md-3 col-sm-3">
+                <div class="sidebar-left col-xs-3 col-lg-3 col-md-3 col-sm-3 hidden-xs">
                     <ul class="list-group">
                         <li class="list-group-item" id="first-child"><b>DANH MỤC</b></li>
                         <li class="list-group-item">Ở đâu</li>
@@ -278,17 +278,29 @@
                         <li class="list-group-item">E-Card</li>
                     </ul>
                 </div>
+                <!--sidebar-mobile-->
+                <div class="container">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><a href="#">Gần tôi</a></td>
+                                <td><a href="#">Coupon</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <!--main-->
 
-                <div  class="col-xs-9 col-lg-9 col-md-9 col-sm-9">
+                <div  class="col-xs-12 col-lg-9 col-md-9 col-sm-9">
                     
-                    <ul class="nav nav-tabs" id="nav-tabs">
-                        <li class="active"><a href="#new" data-toggle="tab"  class="tab" >Mới nhất</a></li>
-                         <li><a href="#week" data-toggle="tab" class="tab">Top tuần</a></li>
-                        <li ><a href="#near" data-toggle="tab" class="tab">Gần tôi</a></li>
+                    <ul class="nav nav-tabs hidden-sm hidden-xs " id="nav-tabs">
+                        <li class="active "><a href="#new" data-toggle="tab"  class="tab " >Mới nhất</a></li>
+                         <li class=""><a href="#week" data-toggle="tab" class="tab ">Top tuần</a></li>
+                        <li class=""><a href="#near" data-toggle="tab" class="tab ">Gần tôi</a></li>
                        
                     
-                        <div class="dropdown" style="float: right; margin-top:3px; margin-right: 20px">
+                        <div class="dropdown hidden-xs hidden-sm" style="float: right; margin-top:3px; margin-right: 20px">
                         <button style="margin-top: 3px" >
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown" >
                                      --Quận/huyện--
@@ -305,9 +317,18 @@
                         </div>
                          
                     </ul>
+                    <!--mobile-->
+                     <ul class="nav nav-tabs visible-sm visible-xs" id="nav-tabs">
+                        <li class="active col-sm-4 col-xs-4" style="padding-right: 0; padding-left: 2px" ><a href="#new" data-toggle="tab" class="tab col-xs-12" >Mới nhất</a></li>
+                         <li class="col-sm-4 col-xs-4" style="padding-right: 0; padding-left: 2px"><a href="#week" data-toggle="tab" class="tab col-xs-12">Top tuần</a></li>
+                        <li class="col-sm-4 col-xs-4" style="padding-right: 0; padding-left: 2px"><a href="#near" data-toggle="tab" class="tab col-xs-12">Gần tôi</a></li>
+                     </ul>
+
+
+
                     <div class="tab-content">
                         <div id="new" class="tab-pane fade in active">
-                        <div class="row">
+                        <div class="row col-xs-12">
                             <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
                                 <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
                                 <div class="text">
@@ -343,7 +364,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="row">
+                        <div class="row col-xs-12">
                              <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
                                 <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
                                 <div class="text">
@@ -380,7 +401,7 @@
                         </div>
 
                         <hr>
-                        <div class="row">
+                        <div class="row col-xs-12">
                              <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
                                 <div><img class="img-rounded" src="img/img.jpg" style="width: 100%"></div>
                                 <div class="text">
@@ -436,9 +457,9 @@
         </div>
         <!-- end page-home -->
         <!-- footer -->
-    <footer >
+    <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
         <div class="container" >
-            <table style="margin: auto" cellspacing="0" cellpadding="1">
+            <table style="margin: auto; width: 100%" cellspacing="0" cellpadding="1">
                 <tr>
                     <td class="footer1"><b>Khám phá</b></td>
                     <td class="footer1"><b>Công Ty</b></td>
@@ -449,7 +470,7 @@
                     <td class="footer1"> Việt Nam</td>
                     <td class="footer1"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</td>
                 </tr>
-                <tr><td colspan="3" style="text-align: center; font-style: italic"> &copy; Copyright 2017 Phan Nguyen Dang Khoa</td></tr>
+                <tr><td colspan="3" style="text-align: center; font-style: italic; margin-top: 3px"> &copy; Copyright 2017 Phan Nguyen Dang Khoa</td></tr>
             </table>
         </div>
     </footer>
