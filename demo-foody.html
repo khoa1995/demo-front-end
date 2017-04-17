@@ -18,126 +18,7 @@
     <script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-    <style>
-  
-        .list-group-item:hover {
-            color: red;
-            cursor: pointer;
-        }
-
-        #search {
-            width: 50%;
-        }
-
-        .row {
-            width: 100%;
-            padding-left: 5%;
-        }
-
-        #first-child {
-           background: rgba(25, 25, 25, .4);
-            pointer-events: none;
-           
-        }
-
-        #Login {
-            background-color: #C3B8B8;
-            width: 200px;
-            top: 36px;
-        }
-
-        .button {
-            float: right;
-            background-color: orange;
-            border: 2px;
-            border-radius: 5px;
-        }
-
-        .button:hover {
-            color: white;
-        }
-
-        .sidebar-left {
-          
-           
-            height: 500px;
-        }
-       
-        a{
-            text-decoration: none;
-        }
-        footer{
-            bottom: 0;
-            margin: 0 auto !important;
-            text-align: center !important;
-            width: 100%! important;
-            border-top: 1px solid black;
-        }
-      
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 80%;
-            height: 500px;
-            margin: auto;
-        }
-        .caret.caret-up {
-            border-top-width: 0;
-            border-bottom: 4px solid #000000;
-        }
-        .affix {
-            top:0;
-            width: 100%;
-            z-index: 999! important;
-        }
-        #slider{
-            background-color: black;
-        }
-        #nav-tabs{
-            background: rgba(25, 25, 25, .3);
-            margin-left:5%;
-            width: 91%;
-        }
-        #order:hover{
-            color: black;
-        }
-
-        .tab{
-            color: white;
-        }
-        .tab:focus{
-            color: black;
-        }
-        .tab:hover{
-            color: #000;
-        }
-        .tab:active{
-            color: #000;
-        }
-        .text-view{
-            color: #888;
-            display: block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-           .text-view2{
-            display: block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .text-view1{
-            margin: 0;
-        }
-        .text{
-            height: 50%;
-        }
-        .footer1{
-            text-align: center;
-            width: 30%;
-        }
-    </style>
-  
+    <link rel="stylesheet" href="css/demo-style.css">
 </head>
 
 <body >
@@ -151,7 +32,7 @@
                 <li><a href="#menu1" data-toggle="tab" id="order" class="tab">Đặt bàn</a></li>
             </ul>
 
-            <div class="tab-content" data-spy="affix" data-offset="197">
+            <div class="tab-content" data-spy="affix" data-offset="197" style="top: 0;z-index: 999!important; width: 100%">
                 <nav class="navbar navbar-default tab-pane fade in active" id="home" >
                     <div class="container">
                         <div class="navbar-header">
@@ -262,29 +143,43 @@
         <div id="main" style="margin: 2% 0 5% 5%">
             <!-- page-home-->
                 <!--sidebar-left-->
-                <div class="sidebar-left col-xs-3 col-lg-3 col-md-3 col-sm-3 hidden-xs">
-                    <ul class="list-group">
-                        <li class="list-group-item" id="first-child"><b>DANH MỤC</b></li>
-                        <li class="list-group-item">Ở đâu</li>
-                        <li class="list-group-item">Giao hàng</li>
-                        <li class="list-group-item">Ăn gì</li>
-                        <li class="list-group-item">Đặt bàn</li>
-                        <li class="list-group-item">Sưu tầm</li>
-                        <li class="list-group-item">TV</li>
-                        <li class="list-group-item">Bình luận</li>
-                        <li class="list-group-item">Blogs</li>
-                        <li class="list-group-item">Khuyến mãi</li>
-                        <li class="list-group-item">Bank-Card</li>
-                        <li class="list-group-item">E-Card</li>
-                    </ul>
-                </div>
+          
+     <nav class="sidebar-left ol-xs-3 col-lg-3 col-md-3 col-sm-3 hidden-xs">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="650" 
+      style="bottom: 17%; min-width: 20%" id="nav-pills">
+        <li class="list-group-item" id="first-child"><b>DANH MỤC</b></li>
+        <li class="list-group-item">Ở đâu</li>
+        <li class="list-group-item">Giao hàng</li>
+        <li class="list-group-item">Ăn gì</li>
+        <li class="list-group-item">Đặt bàn</li>
+        <li class="list-group-item">Sưu tầm</li>
+        <li class="list-group-item">TV</li>
+        <li class="list-group-item">Bình luận</li>
+        <li class="list-group-item">Blogs</li>
+        <li class="list-group-item">Khuyến mãi</li>
+        <li class="list-group-item">Bank-Card</li>
+        <li class="list-group-item">E-Card</li>
+      </ul>
+    </nav>
                 <!--sidebar-mobile-->
-                <div class="container">
-                    <table class="table">
+                <div class="table-responsive hidden-lg hidden-md hidden-sm" id="menu-mobile">
+                    <table class="table table-bordered"  >
                         <tbody>
                             <tr>
-                                <td><a href="#">Gần tôi</a></td>
-                                <td><a href="#">Coupon</a></td>
+                                <td class="success"><a href="#" >Gần tôi</a></td>
+                                <td class="active"><a href="#" >Coupon</a></td>
+                            </tr>
+                            <tr>
+                                <td class="active"><a href="#" >Khuyến mãi</a></td>
+                                <td class="danger"><a href="#" >Đăt chỗ </td>
+                            </tr>
+                            <tr>
+                                <td class="info"><a href="#" >Giao hàng</a></td>
+                                <td class="active"><a href="#" >Blog</td>
+                            </tr>
+                            <tr>
+                                <td class="active"><a href="#">Bình luận</a></td>
+                                <td class="warning"><a href="#">Top thành viên</td>
                             </tr>
                         </tbody>
                     </table>
@@ -294,7 +189,9 @@
 
                 <div  class="col-xs-12 col-lg-9 col-md-9 col-sm-9">
                     
-                    <ul class="nav nav-tabs hidden-sm hidden-xs " id="nav-tabs">
+                    <ul class="nav nav-tabs hidden-sm hidden-xs " id="nav-tabs" 
+                    data-spy="affix" data-offset-top="600" style="bottom:86%; z-index: 10000!important; 
+                    min-width: 63%;max-width: 90%">
                         <li class="active "><a href="#new" data-toggle="tab"  class="tab " >Mới nhất</a></li>
                          <li class=""><a href="#week" data-toggle="tab" class="tab ">Top tuần</a></li>
                         <li class=""><a href="#near" data-toggle="tab" class="tab ">Gần tôi</a></li>
@@ -456,6 +353,30 @@
             <div style="clear: both"></div>
         </div>
         <!-- end page-home -->
+
+        <!--body2-->
+            <div class="container-fluid" style="background-color: #ddd; z-index: 10000!important;position: relative">
+                <ul class="footer-categories fw-padding">
+                    <li><div class="fc-title">Danh mục</div>
+                    <ul>
+                        <li class="li-body2"><a href="#"><label>Sang trong</label><span>(81)</span></a></li>
+                        <li class="li-body2"><a href="#"><label>Nha hang</label><span>(81)</span></a></li>
+                        <li class="li-hide"><a href="#"><label>buffet</label><span>(81)</span></a></li>
+                        <a class=" fc-more " href="#">+ Xem them</a>
+                    </ul>
+                    
+                    </li>
+                </ul>           
+            </div>
+            <script>
+                $('.fc-more').click(function(){
+                    self=$(this);
+                    self.hide();
+                    self.parent().find('li.li-hide').show();
+                })
+            </script>
+        <!--end body2-->
+
         <!-- footer -->
     <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
         <div class="container" >

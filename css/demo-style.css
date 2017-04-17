@@ -1,0 +1,153 @@
+
+        .list-group-item:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        #search {
+            width: 50%;
+        }
+
+        .row {
+            width: 100%;
+            padding-left: 5%;
+        }
+
+        #first-child {
+           background: #ddd;
+            pointer-events: none;
+           
+        }
+
+        #Login {
+            background-color: #C3B8B8;
+            width: 200px;
+            top: 36px;
+        }
+
+        .button {
+            float: right;
+            background-color: orange;
+            border: 2px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            color: white;
+        }
+
+        .sidebar-left {
+          
+          
+            height: 500px;
+        }
+       
+        a{
+            text-decoration: none;
+        }
+        footer{
+            bottom: 0;
+            margin: 0 auto !important;
+            text-align: center !important;
+            width: 100%! important;
+            border-top: 1px solid black;
+        }
+      
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 80%;
+            height: 500px;
+            margin: auto;
+        }
+        .caret.caret-up {
+            border-top-width: 0;
+            border-bottom: 4px solid #000000;
+        }
+        /*.affix{
+            top:0;
+            width: 100%;
+            z-index: 999! important;
+        }*/
+        #slider{
+            background-color: black;
+        }
+        #nav-tabs{
+            background: #ddd;
+            margin-left:49px;
+            
+        }
+        #order:hover{
+            color: black;
+        }
+
+        .tab{
+            color: white;
+        }
+        .tab:focus{
+            color: black;
+        }
+        .tab:hover{
+            color: #000;
+        }
+        .tab:active{
+            color: #000;
+        }
+        .text-view{
+            color: #888;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+           .text-view2{
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .text-view1{
+            margin: 0;
+        }
+        .text{
+            height: 50%;
+        }
+        .footer1{
+            text-align: center;
+            width: 30%;
+        }
+        .menu-mobile:hover{
+            background-color: #DCD0B1;
+        }
+        #menu-mobile{
+            background-color: #ECE7DA;
+            margin-left: -7px;
+        }
+        .list-group.affix{
+            top:20px;
+        }
+        .affix+.nav-tabs{
+            width: 61%;
+        }
+        .footer-categories{
+            margin:0 200px 0 200px; 
+            list-style: none;
+            display: block;
+            clear: both;
+            padding: 30px 30px 0px 0px;
+            float: left;
+            width: 100%;
+        }
+        .fc-title{
+           
+            font-size:16px;
+            font-weight: 700;
+            padding: 5px 5px 0px 0px;
+        }
+        .li-body2{
+            list-style: none;
+        }
+        .li-hide{
+            display: none;
+            list-style: none;
+        }
+     
