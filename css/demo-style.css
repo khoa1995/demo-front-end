@@ -128,20 +128,19 @@
         .affix+.nav-tabs{
             width: 61%;
         }
-        .footer-categories{
-            margin:0 200px 0 200px; 
+        .footer-categories { 
             list-style: none;
             display: block;
             clear: both;
             padding: 30px 30px 0px 0px;
-            float: left;
+            float:left;
             width: 100%;
         }
         .fc-title{
            
             font-size:16px;
             font-weight: 700;
-            padding: 5px 5px 0px 0px;
+            padding: 0px 10px 5px 42px ;
         }
         .li-body2{
             list-style: none;
@@ -150,4 +149,4 @@
             display: none;
             list-style: none;
         }
-     
+    
