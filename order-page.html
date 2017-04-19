@@ -1,0 +1,107 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/search.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/demo-style.css">
+</head>
+
+<body>
+<div id="container">
+<!--header-->
+<header style="background-color:gray; height: 20%">
+            
+            <ul class="nav nav-tabs" style="padding-left: 5%">
+                <li ><a href="demo-foody.html" class="tab">Khám phá</a></li>
+                <li class="active"><a href="order-page.html"  id="order" class="tab">Đặt bàn</a></li>
+            </ul>
+
+            <div class="tab-content" data-spy="affix" data-offset="197" style="top: 0;z-index: 999!important; width: 100%">
+                <nav class="navbar navbar-default tab-pane fade in active" id="home" >
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand"> <img src="img/foody-vn.png" height="30" width="85"></a>
+                        </div>
+
+
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown" style="height: 10%"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TP.HCM
+                            <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Hà Nội</a></li>
+                                        <li><a href="#">Đà Nẵng</a></li>
+                                        <li><a href="#">Huế</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ăn uống
+                                <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Du lịch</a></li>
+                                        <li><a href="#">Vui chơi</a></li>
+                                        <li><a href="#">Làm đẹp</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right" style="padding-top: 14px">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-log-in"></span> Login
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu" id="Login">
+                                    <li>
+                                        <form method="post" style="padding-left: 5%">
+                                            <p><input type="text" style="width: 90%" placeholder="Email"></p>
+                                            <p><input type="password" style="width: 90%" placeholder="password"></p>
+                                            <input type="checkbox"> nhớ tài khoản
+                                            <p><a href="#">Quên mật khẩu</a>
+                                                <input value="Đăng nhập" type="submit" class="button">
+                                                <p><a href="#">Đăng ký</a></p>
+                                        </form>
+                                    </li>
+
+                                </ul>
+
+                            </ul>
+
+
+                            <form class="navbar-form" role="search">
+                                <div class="input-group add-on" id="search">
+                                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+<!--end header-->
+</div>
+</body>
+</html>
