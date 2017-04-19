@@ -45,7 +45,7 @@
         a{
             text-decoration: none;
         }
-        footer{
+        footer{         
             bottom: 0;
             margin: 0 auto !important;
             text-align: center !important;
@@ -152,5 +152,23 @@
         iframe{
             z-index: 10000!important;
             position: relative;
+          height: 138px;
+         
+        }
+        .navigation{
+            padding-left: 22px;    
+        }
+        #item{
+            color: black;
+            font-size: 14px;
+            font-weight: 200;
+        }
+        #item:hover{
+            color:#9480cc;
+            text-decoration: underline;
+        }
+        .navbar-right:hover{
+            background-color: #e29f31;
+            
         }
     
