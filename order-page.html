@@ -28,7 +28,7 @@
             
             <ul class="nav nav-tabs" style="padding-left: 5%">
                 <li ><a href="demo-foody.html" class="tab">Khám phá</a></li>
-                <li class="active"><a href="order-page.html"  id="order" class="tab">Đặt bàn</a></li>
+                <li class="active"><a href="order-page.html"  class="tab">Đặt bàn</a></li>
             </ul>
 
             <div class="tab-content" data-spy="affix" data-offset="197" style="top: 0;z-index: 999!important; width: 100%">
@@ -89,15 +89,23 @@
         <div class="banner-info">
             <p class="title-search">Đặt chỗ miễn phí-Ưu đãi mê ly</p>
         
-        <div class="search-center">
-            <form>
-                <div class="group-select location">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" placeholder="Đặt chỗ miễn phí" data-autocomplete-type="keywords"
-                    data-autocomplete-minlength="2" autocomplete="off" >
+            <div class="search-center">
+                <form>
+                    <div class="group-select location">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Đặt chỗ miễn phí" data-autocomplete-type="keywords"
+                        data-autocomplete-minlength="2" autocomplete="off" >
+                    </div>
+                </form>
+                    <div class="group-select people">
+                    <label class="arrow-select">
+                        <select id="select-people-search">
+                            <option value="0" label="1 người">1 người</option>
+                            <option value="1" selected="selected" label="2 người">2 người</option>
+                        </select>
+                    </label>
                 </div>
-            </form>
-        </div>
+            </div>       
         </div>
     </div>
 </section>

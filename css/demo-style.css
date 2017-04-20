@@ -77,7 +77,7 @@
             
         }
         #order:hover{
-            color: black;
+            color: white;
         }
         .nav li a:hover{
             color: white;
@@ -85,7 +85,7 @@
             background-color: transparent;
         }
         .tab{
-            color: white;
+            color: gray;
         }
         .tab:focus{
             color: black;
@@ -178,7 +178,7 @@
             margin:-7px 13px 5px 0px;
         }
         .login:hover{
-            background-color: orange;
+            background-color: #ff6e23;
         }
         .login a{
             color: black;
@@ -243,6 +243,7 @@
             color: #363636;
             font-size: 14px;
             position: relative;
+           
         }
         /*.search-center .group-select .location input{
             padding-left: 30px;
@@ -255,6 +256,29 @@
         }
         .search-center .group-select input:focus{
             outline: none;
+        }
+        .search-center .group-select .people{
+            width:160px;
+            border-radius: 4px 0 0 4px;
+        }
+        label{
+            display: inline-block;
+            max-width: 100%;
+        }
+        .arrow-select{
+            width:200px;
+            height: 100%;
+            margin: 0;
+            font-weight: 400;
+        }
+        .search-center .group-select select{
+            cursor: pointer!important;
+        }
+        #select-people-search{
+            border:0;
+            height: 100%;
+            margin: 0 19px 0 7px;
+            width: 100%;
         }
 
         
