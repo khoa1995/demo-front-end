@@ -79,7 +79,11 @@
         #order:hover{
             color: black;
         }
-
+        .nav li a:hover{
+            color: white;
+            border: none;
+            background-color: transparent;
+        }
         .tab{
             color: white;
         }
@@ -165,10 +169,93 @@
         }
         #item:hover{
             color:#9480cc;
+            text-decoration: underline;   
+        }
+        .login{
+            float: left;
+            height: 34px;
+            padding:6px;
+            margin:-7px 13px 5px 0px;
+        }
+        .login:hover{
+            background-color: orange;
+        }
+        .login a{
+            color: black;
+            font-size: 14px;
             text-decoration: underline;
         }
-        .navbar-right:hover{
-            background-color: #e29f31;
-            
+        .login a:hover{
+            color: black;
+            font-size: 14px;
+            text-decoration:none;
         }
+        .navbar-right button{
+            margin:-7px 13px 5px 0px;
+            height: 34px;
+           background-color:  rgb(221, 221, 221,0.4);
+
+        }
+        .banner{
+            position: relative;
+            background-color: black;
+        }
+        .banner-img{
+            opacity: 0.4;
+            height: 400px;
+            background-size: cover;
+            width: 100%;
+            background-position: center; 
+        }
+        .banner-info{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            z-index: 5;
+            display: block;
+        }
+        .title-search{
+            border:0;
+            font-size: 30px;
+            line-height: 30px;
+            text-align: left;
+            padding:0 0 20px;
+        }
+        .search-center{
+            border-radius: 4px;
+            background-color: white;
+            position: relative;
+            width: 1100px;
+            float: left;
+        }
+        /*.search-center .group-select .location{
+            top:10px;
+            width: 391px;
+        }*/
+        .search-center .group-select{
+            float: left;
+            border: 1px solid rgb(235, 235, 235);
+            border-right: 0;
+            height: 50px;
+            color: #363636;
+            font-size: 14px;
+            position: relative;
+        }
+        /*.search-center .group-select .location input{
+            padding-left: 30px;
+        }*/
+        .search-center .group-select input{
+            height: 49px;
+            border: 0;
+            box-shadow: none;
+            padding: 0 20px 0 10px;
+        }
+        .search-center .group-select input:focus{
+            outline: none;
+        }
+
+        
     
