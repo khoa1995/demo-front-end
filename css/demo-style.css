@@ -230,6 +230,7 @@
             position: relative;
             width: 1100px;
             float: left;
+            padding: 0;
         }
         /*.search-center .group-select .location{
             top:10px;
@@ -248,17 +249,19 @@
         /*.search-center .group-select .location input{
             padding-left: 30px;
         }*/
+        
         .search-center .group-select input{
             height: 49px;
             border: 0;
             box-shadow: none;
             padding: 0 20px 0 10px;
+            /*width: 300px;*/
         }
         .search-center .group-select input:focus{
             outline: none;
         }
-        .search-center .group-select .people{
-            width:160px;
+         .people{
+            /*width:200px;*/
             border-radius: 4px 0 0 4px;
         }
         label{
@@ -279,6 +282,67 @@
             height: 100%;
             margin: 0 19px 0 7px;
             width: 100%;
+        }
+        #datepicker{
+            cursor: pointer;
+        }
+        .calendar{
+            /*width: 250px;*/
+            left:6px;
+        }
+        /*.time{
+            width: 200px;
+        }*/
+        .btn-find{
+            padding: 0;
+        }
+        .btn-find button{
+            height: 100%;
+            width: 100%;
+            background: orange;
+        }
+        .time{
+            padding-right: 0;
+        }
+        .title-offer{
+            font-size: 24px;
+            color: #ed1c24;
+            text-transform: uppercase;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 23px;
+            background: url("../img/icon-hot.png") no-repeat left center;
+            margin-top: 40px;
+        }
+        .content-special-offer{
+            margin: 0 -10px;
+            padding-bottom:17px;
+            overflow: hidden;
+            display: flex;
+        }
+        .widget-special{
+            border: 1px solid #e1e1e1;
+            border-radius:4px;
+            padding: 0 0 6px;
+            width: 375px;
+            margin: 15px 10px 5px;
+            float: left;
+            transition: box-shadow .25s; 
+        }
+        .widget-special .img-special{
+            display: block;
+            margin-bottom: 11px;
+        }
+        .img-special img{
+            width: 100%;
+            display: block;
+            height: 240px;
+        }
+        .top-info{
+            border-bottom:1px solid #e5e5e5;
+            margin-bottom: 10px;
+            position: relative;
+            padding: 0 10px 5px;
         }
 
         
