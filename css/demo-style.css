@@ -119,6 +119,7 @@
             text-align: center;
             width: 30%;
         }
+       
         .menu-mobile:hover{
             background-color: #DCD0B1;
         }
@@ -297,6 +298,7 @@
             padding: 0;
         }
         .btn-find button{
+            border: none;
             height: 100%;
             width: 100%;
             background: orange;
@@ -312,13 +314,23 @@
             padding-left: 40px;
             margin-bottom: 23px;
             background: url("../img/icon-hot.png") no-repeat left center;
-            margin-top: 40px;
+            margin: 40px 0 0 4%;
         }
+        @media only screen and (min-width: 100px) and (max-width: 479px){
+        .special-offer{
+            padding-left:0;
+            }
+        }
+        @media only screen and (min-width: 479px){
+        .special-offer{
+                padding-left:15%;
+            }
+        }
+     
         .content-special-offer{
             margin: 0 -10px;
             padding-bottom:17px;
             overflow: hidden;
-            display: flex;
         }
         .widget-special{
             border: 1px solid #e1e1e1;
@@ -343,6 +355,42 @@
             margin-bottom: 10px;
             position: relative;
             padding: 0 10px 5px;
+        }
+        @font-face{
+            font-family: OpenSans-Bold;
+            src: url("../font/OpenSans-Bold.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        .title-special{
+            font-family:OpenSans-Bold;
+            font-size: 16px;
+            color: #f37934;
+            /*line-height: 1.2;*/
+            margin:0 0 7px;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .reduce-time{
+            font-size: 14px;
+            color: white;
+            position: absolute;
+            right: 5px;
+            margin-top: -59px;
+        }
+        .info-restaurant{
+            padding-left: 9px;
+        }
+        .info-restaurant .name{
+            font-family:OpenSans-Bold;
+            font-size: 14px;
+            color: #3a3a3a;
+            margin:0 0 7px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         
