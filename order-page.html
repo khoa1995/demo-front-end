@@ -19,21 +19,21 @@
     <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/demo-style.css">
-    
+
 </head>
 
 <body>
-<div id="container">
-<!--header-->
-<header style="background-color:black; height: 20%">
-            
+    <div id="container">
+        <!--header-->
+        <header style="background-color:black; height: 20%">
+
             <ul class="nav nav-tabs" style="padding-left: 5%">
-                <li ><a href="demo-foody.html" class="tab">Khám phá</a></li>
-                <li class="active"><a href="order-page.html"  class="tab">Đặt bàn</a></li>
+                <li><a href="demo-foody.html" class="tab">Khám phá</a></li>
+                <li class="active"><a href="order-page.html" class="tab">Đặt bàn</a></li>
             </ul>
 
             <div class="tab-content" data-spy="affix" data-offset="197" style="top: 0;z-index: 999!important; width: 100%">
-                <nav class="navbar navbar-default tab-pane fade in active" id="home" >
+                <nav class="navbar navbar-default tab-pane fade in active" id="home">
                     <div class="container" style="margin-left: 5%">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse">
@@ -55,21 +55,21 @@
                                         <li><a href="#">Huế</a></li>
                                     </ul>
                                 </li>
-                                
+
                                 <li class="navigation"><a href="#" id="item">Đặt bàn</a></li>
                                 <li class="navigation"><a href="#" id="item">Đặt spa</a></li>
                                 <li class="navigation"><a href="#" id="item">Phần thưởng</a></li>
                                 <li class="navigation"><a href="#" id="item">Bộ sưu tập</a></li>
-                                
+
                             </ul>
-                            
+
                             <ul class="nav navbar-nav navbar-right" style="padding-top: 14px">
                                 <div class="login">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" >
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
                                     Đăng nhập
                                 </a>
                                 </div>
-                        
+
 
                                 <button style="background: white; border: 1px solid #e5e5e5"><span class="glyphicon glyphicon-phone"></span>Apps</button>
                             </ul>
@@ -82,222 +82,489 @@
             </div>
 
         </header>
-</div>
-<!--end header-->
-<section id="main">
-    <!--banner-->
-    <div class="banner">
-        <div class="banner-img" style="background-image: url('img/banner-premium.jpg')"></div>
-        <div class="banner-info ">
-            <p class="title-search">Đặt chỗ miễn phí-Ưu đãi mê ly</p>
-        
-            <div class="search-center ">
-                
-                    <div class="group-select location col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                        <input type="text" placeholder="Đặt chỗ miễn phí" data-autocomplete-type="keywords"
-                        data-autocomplete-minlength="2" autocomplete="off" >
-                    </div>
-                
-                <div class="group-select people col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    <label class="arrow-select">
+
+        <!--end header-->
+        <section id="main">
+            <!--banner-->
+            <div class="banner">
+                <div class="banner-img" style="background-image: url('img/banner-premium.jpg')"></div>
+                <div class="banner-info ">
+                    <p class="title-search">Đặt chỗ miễn phí-Ưu đãi mê ly</p>
+
+                    <div class="search-center ">
+
+                        <div class="group-select location col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input type="text" placeholder="Đặt chỗ miễn phí" data-autocomplete-type="keywords" data-autocomplete-minlength="2" autocomplete="off">
+                        </div>
+
+                        <div class="group-select people col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <label class="arrow-select">
                         <select id="select-people-search">
                             <option value="0" label="1 người">1 người</option>
                             <option value="1" selected="selected" label="2 người">2 người</option>
                         </select>  
                     </label>
-                </div>
-                <div class="group-select calendar col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <label class="arrow-select">
+                        </div>
+                        <div class="group-select calendar col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <label class="arrow-select">
                          <input type="text" value="Thứ năm 20/04/2017" id="datepicker"><span class="caret"></span>
                     </label>
-                </div>
-                 <div class="group-select time col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    <label class="arrow-select">
+                        </div>
+                        <div class="group-select time col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <label class="arrow-select">
                          <input type="text" value="9:30 am" id="datepicker" style="padding: 0">
                          <span class="caret" ></span>
                     </label>
-                </div>
-                 <div class="group-select btn-find col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    <button>Find</button>
-                </div>
-            </div>       
-        </div>
-    </div>
-    <!--end banner-->
-
-    <!--content-->
-      <!--content 1-->
-    <div class="container-fluid">
-        <div class="special-offer">
-            <h2 class="title-offer">Special Offer</h2>
-            <div class="content-special-offer special-container">
-                <!--row 1 -->
-                <div class="row ">
-                    <!--1-->
-                    <div class="widget-special ">
-                        <div class="img-special">
-                            <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg"
-                            alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
                         </div>
-                        <!--info sale-->
-                        <div class="top-info">
-                            <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
-                            <div class="reduce-time">
-                                <span>254 ngày</span>
-                                <span>09</span>
-                                <span>18</span>
-                            </div>
-                        </div>
-                        <!--info restaurant-->
-                        <div class="info-restaurant">
-                            <h3 class="name">Chick Kebabs-Cao Thắng</h3>
-                            <p class="textview">2 Cao Thắng</p>
-                        </div>
-                    </div>
-                    <!--2-->
-                    <div class="widget-special ">
-                        <div class="img-special">
-                            <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg"
-                            alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
-                        </div>
-                        <!--info sale-->
-                        <div class="top-info">
-                            <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
-                            <div class="reduce-time">
-                                <span>254 ngày</span>
-                                <span>09</span>
-                                <span>18</span>
-                            </div>
-                        </div>
-                        <!--info restaurant-->
-                        <div class="info-restaurant">
-                            <h3 class="name">Chick Kebabs-Cao Thắng</h3>
-                            <p class="textview">2 Cao Thắng</p>
-                        </div>
-                    </div>
-                    <!--3-->
-                    <div class="widget-special ">
-                        <div class="img-special">
-                            <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg"
-                            alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
-                        </div>
-                        <!--info sale-->
-                        <div class="top-info">
-                            <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
-                            <div class="reduce-time">
-                                <span>254 ngày</span>
-                                <span>09</span>
-                                <span>18</span>
-                            </div>
-                        </div>
-                        <!--info restaurant-->
-                        <div class="info-restaurant">
-                            <h3 class="name">Chick Kebabs-Cao Thắng</h3>
-                            <p class="textview">2 Cao Thắng</p>
-                        </div>
-                    </div>
-                </div>
-                 <!--row 2-->
-                <div class="row">
-                    <!--1-->
-                    <div class="widget-special  ">
-                        <div class="img-special">
-                            <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg"
-                            alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
-                        </div>
-                        <!--info sale-->
-                        <div class="top-info">
-                            <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
-                            <div class="reduce-time">
-                                <span>254 ngày</span>
-                                <span>09</span>
-                                <span>18</span>
-                            </div>
-                        </div>
-                        <!--info restaurant-->
-                        <div class="info-restaurant">
-                            <h3 class="name">Chick Kebabs-Cao Thắng</h3>
-                            <p class="textview">2 Cao Thắng</p>
-                        </div>
-                    </div>
-                    <!--2-->
-                    <div class="widget-special ">
-                        <div class="img-special">
-                            <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg"
-                            alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
-                        </div>
-                        <!--info sale-->
-                        <div class="top-info">
-                            <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
-                            <div class="reduce-time">
-                                <span>254 ngày</span>
-                                <span>09</span>
-                                <span>18</span>
-                            </div>
-                        </div>
-                        <!--info restaurant-->
-                        <div class="info-restaurant">
-                            <h3 class="name">Chick Kebabs-Cao Thắng</h3>
-                            <p class="textview">2 Cao Thắng</p>
-                        </div>
-                    </div>
-                    <!--3-->
-                    <div class="widget-special ">
-                        <div class="img-special">
-                            <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg"
-                            alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
-                        </div>
-                        <!--info sale-->
-                        <div class="top-info">
-                            <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
-                            <div class="reduce-time">
-                                <span>254 ngày</span>
-                                <span>09</span>
-                                <span>18</span>
-                            </div>
-                        </div>
-                        <!--info restaurant-->
-                        <div class="info-restaurant">
-                            <h3 class="name">Chick Kebabs-Cao Thắng</h3>
-                            <p class="textview">2 Cao Thắng</p>
+                        <div class="group-select btn-find col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <button>Find</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!--end banner-->
+
+            <!--content-->
+            <!--content 1-->
+            <div class="container">
+                <div class="special-offer">
+                    <h2 class="title-offer">Special Offer</h2>
+                    <div class="content-special-offer special-container">
+                        <!--row 1 -->
+                        <div class="row ">
+                            <!--1-->
+                            <div class="widget-special col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="img-special ">
+                                    <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg" alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
+                                </div>
+                                <!--info sale-->
+                                <div class="top-info">
+                                    <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
+                                    <div class="reduce-time">
+                                        <span>254 ngày</span>
+                                        <span>09</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <!--info restaurant-->
+                                <div class="info-restaurant">
+                                    <h3 class="name">Chick Kebabs-Cao Thắng</h3>
+                                    <p class="textview">2 Cao Thắng</p>
+                                </div>
+                            </div>
+                            <!--2-->
+                            <div class="widget-special col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="img-special ">
+                                    <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg" alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
+                                </div>
+                                <!--info sale-->
+                                <div class="top-info">
+                                    <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
+                                    <div class="reduce-time">
+                                        <span>254 ngày</span>
+                                        <span>09</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <!--info restaurant-->
+                                <div class="info-restaurant">
+                                    <h3 class="name">Chick Kebabs-Cao Thắng</h3>
+                                    <p class="textview">2 Cao Thắng</p>
+                                </div>
+                            </div>
+                            <!--3-->
+                            <div class="widget-special col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="img-special">
+                                    <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg" alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
+                                </div>
+                                <!--info sale-->
+                                <div class="top-info">
+                                    <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
+                                    <div class="reduce-time">
+                                        <span>254 ngày</span>
+                                        <span>09</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <!--info restaurant-->
+                                <div class="info-restaurant">
+                                    <h3 class="name">Chick Kebabs-Cao Thắng</h3>
+                                    <p class="textview">2 Cao Thắng</p>
+                                </div>
+                            </div>
+
+                            <!--row 2-->
+
+                            <!--1-->
+                            <div class="widget-special col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+                                <div class="img-special">
+                                    <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg" alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
+                                </div>
+                                <!--info sale-->
+                                <div class="top-info">
+                                    <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
+                                    <div class="reduce-time">
+                                        <span>254 ngày</span>
+                                        <span>09</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <!--info restaurant-->
+                                <div class="info-restaurant">
+                                    <h3 class="name">Chick Kebabs-Cao Thắng</h3>
+                                    <p class="textview">2 Cao Thắng</p>
+                                </div>
+                            </div>
+                            <!--2-->
+                            <div class="widget-special col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+                                <div class="img-special">
+                                    <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg" alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
+                                </div>
+                                <!--info sale-->
+                                <div class="top-info">
+                                    <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
+                                    <div class="reduce-time">
+                                        <span>254 ngày</span>
+                                        <span>09</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <!--info restaurant-->
+                                <div class="info-restaurant">
+                                    <h3 class="name">Chick Kebabs-Cao Thắng</h3>
+                                    <p class="textview">2 Cao Thắng</p>
+                                </div>
+                            </div>
+                            <!--3-->
+                            <div class="widget-special col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="img-special">
+                                    <img src="https://media.foody.vn/res/g9/87295/prof/s320x200/2015615104648-foody-avatar-1.jpg" alt="Giảm hóa 20% hóa đơn thức ăn từ t2-t6 khi đặt chỗ qua tableNow">
+                                </div>
+                                <!--info sale-->
+                                <div class="top-info">
+                                    <h3 class="title-special">Giảm 20% trên tổng hóa đơn</h3>
+                                    <div class="reduce-time">
+                                        <span>254 ngày</span>
+                                        <span>09</span>
+                                        <span>18</span>
+                                    </div>
+                                </div>
+                                <!--info restaurant-->
+                                <div class="info-restaurant">
+                                    <h3 class="name">Chick Kebabs-Cao Thắng</h3>
+                                    <p class="textview">2 Cao Thắng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--content 2-->
+            <div style="background:#f5f5f5; position: relative; z-index: 2">
+                <div class="container">
+                    <div class="row" style="margin-top:40px">
+                        <div class="title-header">
+                            <h2 class="title-page">BỘ SƯU TẬP NỔI BẬT</h2>
+                        </div>
+                    </div>
+                    <!--row1-->
+                    <div class="row">
+                        <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+
+                        <div class="inside-frame  col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+
+                        <div class="inside-frame  col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+
+                        <div class="inside-frame  col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row2-->
+                    <div class="row">
+                        <div class="inside-frame col-lg-3 col-md-4 col-sm-4 col-xs-4">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+
+                        <div class="inside-frame  col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+
+                        <div class="inside-frame  col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+
+                        <div class="inside-frame  col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="thumbnail">
+                                <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                    width="100%" height="172px">
+                                <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--button more-->
+                    <div class="view-more-restaurant" style="padding-bottom:30px">
+                        <button class="btn-more"><a href="#">Xem thêm</a></button>
+                    </div>
+                </div>
+            </div>
+            <!--content 3-->
+            <div class="container">
+                <div style="position: relative;z-index: 2">
+                    <div class="row" style="margin-top:40px">
+                        <div class="title-header">
+                            <h2 class="title-page" style="float: left!important; margin:auto">ĐỊA ĐIỂM NỔI BẬT</h2>
+                            <div class="filter-restaurant" style="float: right!important">
+                                <ul>
+                                    <li><a href="#">Buffet</a></li>
+                                    <li><a href="#">Món Hoa</a></li>
+                                    <li><a href="#">Món Nhật</a></li>
+                                    <li><a href="#">Món Thái</a></li>
+                                    <li><a href="#">Món Âu Mỹ</a></li>
+                                    <li><a href="#">Món Việt</a></li>
+                                    <li>
+                                        <a href="#"><b> Xem Thêm</b></a>
+                                        <i class="fa fa-caret-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row picture-->
+                        <div class="row">
+                            <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="photo-special-location" style="position: relative">
+                                    <a class="btn-book-now" title="Secret Garden">
+                                        <span>đặt ngay</span>
+                                    </a>
+                                        <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                            width="100%" height="172px">
+                                        <!--info restaurant-->
+                                        <div class="info-restaurant">
+                                            <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                            <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                        </div>
+                                        <!--discount time-->
+                                        <div class="discount-time">
+                                            <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                                <span style="color: #239a47">Buổi trưa</span>
+                                                <span style="margin:0 3px"> - </span>
+                                                <a href="#" class="txt-orange">Giảm 10%</a>
+                                            </p>
+                                            <p style="margin:0; padding: 0 10px 0 0">
+                                                <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                            </p>
+                                        </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                
+                                    <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                        width="100%" height="172px">
+                                    <!--info restaurant-->
+                                    <div class="info-restaurant">
+                                        <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                        <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                    </div>
+                                    <!--discount time-->
+                                    <div class="discount-time">
+                                        <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                            <span style="color: #239a47">Buổi trưa</span>
+                                            <span style="margin:0 3px"> - </span>
+                                            <a href="#" class="txt-orange">Giảm 10%</a>
+                                        </p>
+                                        <p style="margin:0; padding: 0 10px 0 0">
+                                            <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                        </p>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                
+                                    <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                        width="100%" height="172px">
+                                    <!--info restaurant-->
+                                    <div class="info-restaurant">
+                                        <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                        <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                    </div>
+                                    <!--discount time-->
+                                    <div class="discount-time">
+                                        <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                            <span style="color: #239a47">Buổi trưa</span>
+                                            <span style="margin:0 3px"> - </span>
+                                            <a href="#" class="txt-orange">Giảm 10%</a>
+                                        </p>
+                                        <p style="margin:0; padding: 0 10px 0 0">
+                                            <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                        </p>
+                                    </div>
+                                
+                            </div>
+
+                             <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                
+                                    <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                        width="100%" height="172px">
+                                    <!--info restaurant-->
+                                    <div class="info-restaurant">
+                                        <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                        <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                    </div>
+                                    <!--discount time-->
+                                    <div class="discount-time">
+                                        <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                            <span style="color: #239a47">Buổi trưa</span>
+                                            <span style="margin:0 3px"> - </span>
+                                            <a href="#" class="txt-orange">Giảm 10%</a>
+                                        </p>
+                                        <p style="margin:0; padding: 0 10px 0 0">
+                                            <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                        </p>
+                                    </div>
+                                
+                            </div>
+                        
+                        <!--row2-->
+                        
+                            <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                
+                                    <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                        width="100%" height="172px">
+                                    <!--info restaurant-->
+                                    <div class="info-restaurant">
+                                        <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                        <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                    </div>
+                                    <!--discount time-->
+                                    <div class="discount-time">
+                                        <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                            <span style="color: #239a47">Buổi trưa</span>
+                                            <span style="margin:0 3px"> - </span>
+                                            <a href="#" class="txt-orange">Giảm 10%</a>
+                                        </p>
+                                        <p style="margin:0; padding: 0 10px 0 0">
+                                            <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                        </p>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                
+                                    <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                        width="100%" height="172px">
+                                    <!--info restaurant-->
+                                    <div class="info-restaurant">
+                                        <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                        <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                    </div>
+                                    <!--discount time-->
+                                    <div class="discount-time">
+                                        <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                            <span style="color: #239a47">Buổi trưa</span>
+                                            <span style="margin:0 3px"> - </span>
+                                            <a href="#" class="txt-orange">Giảm 10%</a>
+                                        </p>
+                                        <p style="margin:0; padding: 0 10px 0 0">
+                                            <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                        </p>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                
+                                    <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                        width="100%" height="172px">
+                                    <!--info restaurant-->
+                                    <div class="info-restaurant">
+                                        <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                        <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                    </div>
+                                    <!--discount time-->
+                                    <div class="discount-time">
+                                        <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                            <span style="color: #239a47">Buổi trưa</span>
+                                            <span style="margin:0 3px"> - </span>
+                                            <a href="#" class="txt-orange">Giảm 10%</a>
+                                        </p>
+                                        <p style="margin:0; padding: 0 10px 0 0">
+                                            <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                        </p>
+                                    </div>
+                                
+                            </div>
+
+                             <div class="inside-frame col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                
+                                    <img src="https://media.foody.vn/res/g4/34536/prof/s320x200/foody-mobile-garden-1-jpg-556-636125702335163632.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K"
+                                        width="100%" height="172px">
+                                    <!--info restaurant-->
+                                    <div class="info-restaurant">
+                                        <h3 class="name">Secret Garden-Vietnamese Restaurant & Tea House</h3>
+                                        <p class="textview">158 Bis/40-41 Pasteur,P.Bến Nghé</p>
+                                    </div>
+                                    <!--discount time-->
+                                    <div class="discount-time">
+                                        <p style="margin:0; padding: 0 10px 4px 0; font-size: 16px">
+                                            <span style="color: #239a47">Buổi trưa</span>
+                                            <span style="margin:0 3px"> - </span>
+                                            <a href="#" class="txt-orange">Giảm 10%</a>
+                                        </p>
+                                        <p style="margin:0; padding: 0 10px 0 0">
+                                            <a href="#" style="color: #898989; font-size: 12px; text-decoration: none">Xem thêm 1 ưu đãi khác ...</a>
+                                        </p>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <!--button more-->
+                        <div class="view-more-restaurant" style="padding-bottom:30px">
+                            <button class="btn-more"><a href="#">Xem thêm nhà hàng</a></button>
+                        </div>               
+                </div>
+            </div>
+        </section>
     </div>
-    
-      <!--content 2-->
-        <div style="background:#f5f5f5; position: relative; z-index: 2">
-          
-                <div class="row" style="margin-top:40px">
-                    <div class="title-header">
-                        <h2 class="title-page">BỘ SƯU TẬP NỔI BẬT</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="inside-frame col-lg-3">
-                       <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K" width="100%" height="172px">
-                       <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
-                    </div>
-
-                    <div class="inside-frame  col-lg-3">
-                       <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K" width="100%" height="172px">
-                       <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
-                    </div>
-
-                    <div class="inside-frame  col-lg-3">
-                       <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K" width="100%" height="172px">
-                       <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
-                    </div>
-
-                    <div class="inside-frame  col-lg-3">
-                       <img src="https://media.foody.vn/bookingcollection/s300/foody-mobile-jc3c1vmt-jpg-316-636058161872585219.jpg" alt="BUFFET THẢ GA CHỈ TỪ 144K" width="100%" height="172px">
-                       <h3 class="title-top-collection">BUFFET THẢ GA CHỈ TỪ 144K</h3>
-                    </div>
-                </div>
-        </div>
-</section>
 </body>
+
 </html>
