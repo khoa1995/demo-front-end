@@ -27,7 +27,7 @@ function handleFile(evt) {
 
         //đọc đường dẫn để xuất hình
         reader.readAsDataURL(f);
-        $('#files').val(null);
+       
     }
 }
 document.getElementById('files').addEventListener('change', handleFile, false);
