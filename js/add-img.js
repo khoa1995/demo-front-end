@@ -37,7 +37,7 @@ $('.btn-add').click(function () {
 
 //xoá hình ảnh qua nút x 
 //parent lấy thẻ đầu tiên bao bọc; parents sẽ lấy hết các thẻ bao bọc
-//closet sẽ lấy nguồn gốc đầu tiên của thẻ ta chỉ định
+//closest sẽ lấy nguồn gốc đầu tiên của thẻ ta chỉ định
 $(document).on('click', '#remove', function () {
     if (confirm('Are you sure?')) {
         $(this).closest('span').empty();
