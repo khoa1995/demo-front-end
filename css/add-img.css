@@ -28,7 +28,7 @@
     color: white;
     margin:0 0 0 3px;
 }
-.add-img .image{
+.add-img .btn-add{
     border:1px solid skyblue;
     border-radius: 10px;
     width: 100px;
@@ -36,17 +36,17 @@
     background: #efefef;
     text-align: center;
     height: 79px;
-    padding:9px auto auto 5px ;
     box-sizing: border-box;
     cursor: pointer;
     white-space: normal;
+    float: left;
 }
-.add-img .image:focus{
+.add-img .btn-add:focus{
     outline: none;
 }
-.add-img .image:hover{
+.add-img .btn-add:hover{
     transform: scale(1.1,1.1);
-    padding:9px auto auto 5px ;
+    margin-left:5px;
 }
 .add-img div{
      float: left;

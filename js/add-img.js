@@ -27,12 +27,11 @@ function handleFile(evt) {
 
         //đọc đường dẫn để xuất hình
         reader.readAsDataURL(f);
-
-
+        $('#files').val(null);
     }
 }
 document.getElementById('files').addEventListener('change', handleFile, false);
-$('.image').click(function () {
+$('.btn-add').click(function () {
     $('.file').click();
 });
 
@@ -41,7 +40,8 @@ $('.image').click(function () {
 //closet sẽ lấy nguồn gốc đầu tiên của thẻ ta chỉ định
 $(document).on('click', '#remove', function () {
     if (confirm('Are you sure?')) {
-        $(this).parent().remove();
+        $(this).closest('span').empty();
+        $('#files').val(null);
     }
     return false;
 })
