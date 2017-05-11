@@ -336,7 +336,8 @@
             border: 1px solid #e1e1e1;
             border-radius:4px;
             padding: 0 0 6px;
-            width: 375px;
+            width: 31.3%;
+            /*width: 375px;*/
             margin: 15px 10px 5px;
             float: left;
             transition: box-shadow .25s; 
@@ -381,6 +382,7 @@
             margin-top: -59px;
         }
         .info-restaurant{
+            border:1px solid #e1e1e1;
             padding-left: 9px;
         }
         .info-restaurant .name{
@@ -423,6 +425,82 @@
             text-overflow: ellipsis;
             color: #f37934;
         }
+        .view-more-restaurant{ 
+            width: 280px;
+            margin: auto auto 30px;
+            padding: 5px;
+            position: relative;
+        }
+        .btn-more{
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #f37934;
+            display: block;
+        }
+        .btn-more a{
+            color: white;
+            text-decoration: none;
+        }
+        .filter-restaurant ul li{
+            display: inline-block;
+            padding: 0 12px;
+        }
+        .filter-restaurant ul li a{
+            color: black;
+        }
+        .name-special-location{
+            font-size: 14px;
+            display: block;
+            color: #3a3a3c;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 10px 0 0;
+        }
+        .discount-time{
+            width: 100%;
+            border: 1px solid #e1e1e1;
+            padding: 0 5px;
+            height: 56px;
+        }
+        .txt-orange{
+            display: inline-block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            position: relative;
+            top: 5px;
+            max-width: 177px;
+        }
+        .photo-special-location:hover .btn-book-now{
+            display: block;
+            border-radius: 5px;
+        }
+        .btn-book-now{
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height: 100%;
+            z-index: 9;
+            border-radius: 5px;
+            text-decoration: none!important;
+        }
+        .btn-book-now span{
+            width: 110px;
+            text-align: center;
+            display: block;
+            line-height: 30px;
+            color: white;
+            font-size: 16px;
+            background-color: #f37934;
+            margin: 70px auto 0;
+        }
+        
 
         
     
